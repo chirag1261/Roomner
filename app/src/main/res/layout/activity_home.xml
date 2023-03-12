@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".homeActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/roomner_logo" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="2">
+
+
+        <!-- Row 1 -->
+
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPreference"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#2821EA"
+            android:clickable="true"
+            android:onClick="clicked"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Setup New\nPreferences"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMatches"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="#2821EA"
+            android:clickable="true"
+            android:onClick="clicked"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="  Show\nMatches"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Row 2 -->
+
+        <!-- Column 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvSignOut"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#2821EA"
+            android:clickable="true"
+            android:onClick="clicked"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sign_out"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Column 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvFeedback"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="#2821EA"
+            android:clickable="true"
+            android:onClick="clicked"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="  Submit\nFeedback"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>
